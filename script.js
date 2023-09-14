@@ -1,3 +1,3 @@
 const body = document.querySelector(".body");
-const bodyWidth =  "100% " + window.screen.height +"px";
-body.style.backgroundSize = bodyWidth;
+const bodyWidth =  window.screen.height - 50;
+body.style.backgroundSize = `100% ${bodyWidth}px`;
