@@ -192,7 +192,7 @@
 .footer-menu a{
     text-decoration: none;
     color: var(--second);
-    font-size: 140%;
+    font-size: 150%;
     padding-left: 4%;
 }
 /* RESPONSIVE */
@@ -203,20 +203,20 @@
     }
     .navbar img{
         width: 50%;
-        margin-left: 8%;
+        margin-left: 10%;
     }
     .nav-item{
         font-size: 110%;
         border-right: none;
     }
     .link1{
-        margin: 5% 0% 0% 16%;
+        padding: 5% 0% 0% 16%;
     }
     .link2{
-        margin: 5% 0% 0% 0%;
+        padding-top: 5%;
     }
     .link3{
-        margin: 0% 0% 0% 8%;
+        padding-left: 8%;
     }
     /* PRINCIPAL */
     .principal{
@@ -248,7 +248,7 @@
     }
     /* APRESENTATION */
     .suite{
-        margin: 0% 5% 10% 5%;
+        margin: 2% 10% 5% 10%;
     }
     .suite img{
         width: 100%;
@@ -269,6 +269,9 @@
         font-size: 600%;
     }
     /* LOCATION */
+    .location-section{
+
+    }
     .location-section div{
         padding-top: 5%;
         width: 100%;
@@ -283,32 +286,5 @@
         height:100%;
         width:100%;
         position:absolute;
-    }
-    /* AVALIATION */
-    .aval{
-        width: 55%;
-    }
-    .note-text{
-        width: 44%;
-        padding: 5% 1%;
-    }
-    /* FOOTER */
-    .footer-section{
-        background-color: var(--primary);
-        padding: 5% 5%;
-        color: var(--second);
-    }
-    .footer-contacts{
-        padding-top: 10%;
-        padding-left: 6%;
-        width: 100%;
-    }
-    .footer-menu{
-        padding-top: 10%;
-        padding-left: 6%;
-        width: 100%;
-    }
-    .footer-menu a{
-        font-size: 120%;
     }
 }
