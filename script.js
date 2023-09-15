@@ -44,7 +44,7 @@ const imgS4 = "https://imgmd.net/images/v1/guia/1684164/ubatuba-230-c.jpg"
 const imgSuites = document.querySelector(".suite img");
 imgSuites.src = imgS1
 
-const btLeftSuites = document.querySelector(".suite span");
+const btLeftSuites = document.querySelector(".spanl");
 const btRightSuites = document.querySelector(".spanr");
 
 btLeftSuites.addEventListener("click", (e) => {
@@ -64,3 +64,7 @@ btRightSuites.addEventListener("click", (e) => {
     "Imagem Não Encontrada";
 
 });
+
+btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
+btRightSuites.style.paddingTop = `${imgSuites.height}px`;
+btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
