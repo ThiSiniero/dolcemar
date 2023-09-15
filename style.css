@@ -36,6 +36,9 @@
     font-size: 110%;
     border-right: 1px solid white;
 }
+.nav-item :hover{
+    color: aqua;
+}
 .nav-link{
     color: white;
     font-weight: 600;
@@ -84,12 +87,13 @@
     padding: 1%;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
-/* APRESENTATION */
+/* APRESENTATION */ 
 .apresentation-section{
     text-align: center;
-    width: 90%;
-    margin-left: 5%;
-    font-size: 150%;
+}
+.apresentation-text{
+    font-size: 120%;
+    white-space: pre-line;
 }
 .apresentation-section h2{
     font-size: 300%;
@@ -100,7 +104,8 @@
 }
 /* SUITE */
 .suite{
-    margin: 2% 15% 5% 15%;
+    text-align: center;
+    margin: 1% 15% 1% 15%;
     padding: 1%;
     background-color:rgba(128, 128, 128, 0.24);
     border-radius: 15px;
@@ -111,17 +116,11 @@
     width: 40%;
     border-radius: 15px 0px 0px 15px;
 }
-.suite h3 {
-    font-size: 100%;
-}
 .suite div{
     text-align: start;
     padding-left: 3%;
     width: 60%;
-    font-size: 70%;
-}
-.description-suite{
-    font-size: 80%;
+    font-size: 100%;
 }
 .suite span{
     cursor: pointer;
@@ -138,6 +137,19 @@
 .suite .spanr{
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
     border-radius: 0px 0px 0px 0px;
+}
+.btReserve{
+    border: 1px solid var(--primary);
+    border-radius: 55px;
+    padding: 0.5% 1%;
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 3%;
+    font-size: 120%;
+}
+.apresentation-section a :hover{
+    color:deepskyblue;
+    border: 1px solid deepskyblue;
 }
 /* iCONS */
 .icons-section{
