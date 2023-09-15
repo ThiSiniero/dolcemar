@@ -22,8 +22,8 @@ if(bodyWidth < 780){
 body.style.backgroundSize = `100% ${bodyHeight}px`;
 
 /* Suites */
-const imgS1 = "file:///home/thiago/projetos/dolcemar/imgs/suite.jpg"
-const imgS2 = "file:///home/thiago/projetos/dolcemar/imgs/suite2.jpg"
+const imgS1 = "imgs/suite.jpg"
+const imgS2 = "imgs/suite2.jpg"
 const imgS3 = "https://www.expedia.com.br/stories/wp-content/uploads/2021/11/Ubatuba-1.jpg"
 const imgS4 = "https://imgmd.net/images/v1/guia/1684164/ubatuba-230-c.jpg"
 const imgSuites = document.querySelector(".suite img");
