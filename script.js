@@ -54,35 +54,52 @@ const imgS2 = "https://dolcemar.vercel.app/imgs/suite2.jpeg";
 const imgS3 = "https://dolcemar.vercel.app/imgs/suite3.jpeg";
 const imgS4 = "https://dolcemar.vercel.app/imgs/suite4.jpeg";
 const imgSuites = document.querySelector(".suite img");
-imgSuites.src = imgS1
+console.log(imgSuites.height);
+imgSuites.src = imgS1;
 
 const btLeftSuites = document.querySelector(".spanl");
 const btRightSuites = document.querySelector(".spanr");
 
 btLeftSuites.addEventListener("click", (e) => {
-    console.log(imgSuites.src)
-    imgSuites.src == imgS1 ? imgSuites.src = imgS4 : 
-    imgSuites.src == imgS2 ? imgSuites.src = imgS1 : 
-    imgSuites.src == imgS3 ? imgSuites.src = imgS2 : 
-    imgSuites.src == imgS4 ? imgSuites.src = imgS3 : 
-    "Imagem Não Encontrada";
+    prev();
 
     btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
     btRightSuites.style.paddingTop = `${imgSuites.height}px`;
     btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
 });
 btRightSuites.addEventListener("click", (e) => {
+    next();
+
+    btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
+    btRightSuites.style.paddingTop = `${imgSuites.height}px`;
+    btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
+    console.log(imgSuites.height);
+});
+
+setTimeout(() => {
+    console.log(imgSuites);
+    console.log(imgSuites.height);
+    btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
+    btRightSuites.style.paddingTop = `${imgSuites.height}px`;
+    btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
+}, 500)
+
+setInterval(() => {
+    next();
+}, 10000);
+
+function prev() {
+    imgSuites.src == imgS1 ? imgSuites.src = imgS4 : 
+    imgSuites.src == imgS2 ? imgSuites.src = imgS1 : 
+    imgSuites.src == imgS3 ? imgSuites.src = imgS2 : 
+    imgSuites.src == imgS4 ? imgSuites.src = imgS3 : 
+    "Imagem Não Encontrada";
+}
+
+function next() {
     imgSuites.src == imgS1 ? imgSuites.src = imgS2 : 
     imgSuites.src == imgS2 ? imgSuites.src = imgS3 : 
     imgSuites.src == imgS3 ? imgSuites.src = imgS4 : 
     imgSuites.src == imgS4 ? imgSuites.src = imgS1 : 
     "Imagem Não Encontrada";
-    
-    btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
-    btRightSuites.style.paddingTop = `${imgSuites.height}px`;
-    btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
-});
-
-btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
-btRightSuites.style.paddingTop = `${imgSuites.height}px`;
-btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
+}
