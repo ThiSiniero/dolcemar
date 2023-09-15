@@ -3,23 +3,38 @@ const body = document.querySelector(".body");
 let bodyHeight =  window.screen.height - 50;
 const bodyWidth =  window.screen.width;
 
+/* PRINCIPAL */
+const imgP1 = document.querySelector(".img1")
+const imgP2 = document.querySelector(".img2")
+const imgP3 = document.querySelector(".img3")
+const imgP4 = document.querySelector(".img4")
+const imgP5 = document.querySelector(".img5")
+const imgP6 = document.querySelector(".img6")
+const imgP7 = document.querySelector(".img7")
+
+/* RESPONSIVE */
 if(bodyWidth < 780){
 
     bodyHeight += 50;
     /* HEADER */
     let headerHeight = 0.23 * bodyHeight;
-    document.querySelector(".whats").style.visibility = "hidden"
     document.querySelector(".header").style.height = `${headerHeight}px`;
-    document.querySelector(".img1").setAttribute('src', 'https://imgmd.net/images/v1/guia/1684164/ubatuba-230-c.jpg');
-    document.querySelector(".img2").setAttribute('src', 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/238177666.jpg?k=652d21a9d5c9393c999f9079c9b60a94dc968b35e602f15b6e6ff3ab487c658f&o=&hp=1');
-    document.querySelector(".img5").setAttribute('src', 'https://www.expedia.com.br/stories/wp-content/uploads/2021/11/Ubatuba-1.jpg');
-    document.querySelector(".img6").setAttribute('src', 'imgs/suite2.jpg');
-    /* PRINCIPAL */
-    let principalHeight = 0.7 * bodyHeight;
-    document.querySelector(".principal").style.height = `${principalHeight}px`;
-
+    document.querySelector(".whats").style.visibility = "hidden";
+    
 }
 body.style.backgroundSize = `100% ${bodyHeight}px`;
+
+/* PRINCIPAL */
+let principalHeight = 0.6475 * bodyHeight;
+document.querySelector(".principal").style.height = `${principalHeight}px`;
+const imgsPHeight = 0.874 * principalHeight
+imgP1.style.height = `${0.6 * imgsPHeight}px`;
+imgP2.style.height = `${0.6 * imgsPHeight}px`;
+imgP3.style.height = `${0.6 * imgsPHeight}px`;
+imgP4.style.height = `${0.4 * imgsPHeight}px`;
+imgP5.style.height = `${0.4 * imgsPHeight}px`;
+imgP6.style.height = `${0.4 * imgsPHeight}px`;
+imgP7.style.height = `${0.4 * imgsPHeight}px`;
 
 /* Suites */
 const imgS1 = "https://dolcemar.vercel.app/imgs/suite.jpg"
