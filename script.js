@@ -49,7 +49,7 @@ if(bodyWidth < 780){
 body.style.backgroundSize = `100% ${bodyHeight}px`;
 
 /* Suites */
-const imgS1 = "https://dolcemar.vercel.app/imgs/suite.jpg";
+const imgS1 = "https://dolcemar.vercel.app/imgs/suite1.jpg";
 const imgS2 = "https://dolcemar.vercel.app/imgs/suite2.jpeg";
 const imgS3 = "https://dolcemar.vercel.app/imgs/suite3.jpeg";
 const imgS4 = "https://dolcemar.vercel.app/imgs/suite4.jpeg";
@@ -83,7 +83,6 @@ btRightSuites.addEventListener("click", (e) => {
     btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;
 });
 
-console.log(imgSuites.height);
 btLeftSuites.style.paddingTop = `${imgSuites.height}px`;
 btRightSuites.style.paddingTop = `${imgSuites.height}px`;
 btRightSuites.style.marginLeft = `${imgSuites.width - 31}px`;

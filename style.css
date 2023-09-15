@@ -90,7 +90,6 @@
     width: 90%;
     margin-left: 5%;
     font-size: 150%;
-    margin-top: 30%;
 }
 .apresentation-section h2{
     font-size: 300%;
@@ -300,6 +299,9 @@
 
     }
     /* APRESENTATION */
+    .apresentation-section{
+        margin-top: 30%;
+    }
     .suite{
         margin: 0% 5% 10% 5%;
     }
