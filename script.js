@@ -49,10 +49,10 @@ if(bodyWidth < 780){
 body.style.backgroundSize = `100% ${bodyHeight}px`;
 
 /* Suites */
-const imgS1 = "http://dolcemarubatubasuites.com.br/wp-content/gallery/suite04/Suite04-01.JPG"
-const imgS2 = "https://dolcemar.vercel.app/imgs/suite2.jpg"
-const imgS3 = "http://dolcemarubatubasuites.com.br/wp-content/gallery/suite01/Suite01-01.jpg"
-const imgS4 = "http://dolcemarubatubasuites.com.br/wp-content/gallery/suite02/suite02-05.jpg"
+const imgS1 = "https://dolcemar.vercel.app/imgs/suite.jpg";
+const imgS2 = "https://dolcemar.vercel.app/imgs/suite2.jpeg";
+const imgS3 = "https://dolcemar.vercel.app/imgs/suite3.jpeg";
+const imgS4 = "https://dolcemar.vercel.app/imgs/suite4.jpeg";
 const imgSuites = document.querySelector(".suite img");
 imgSuites.src = imgS1
 
